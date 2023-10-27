@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 50px;
+  font-family: "Inconsolata";
 }
 
 .heading {
@@ -35,13 +38,15 @@ body {
 
 .greet {
   align-self: flex-start;
-  font-size: 25px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
 }
 
 .greet input {
   border: none;
   outline: none;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 400;
 }
 
@@ -50,6 +55,7 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  font-family: "Montserrat";
 }
 
 .double {
@@ -109,12 +115,16 @@ input {
   gap: 30px;
   padding: 40px;
   width: 100%;
+  overflow: auto;
 }
 
 .harcama {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .buttons {
@@ -132,4 +142,20 @@ input {
 .buttons img:nth-child(2) {
   width: 35px;
   height: 35px;
+}
+
+.harcama h2:nth-child(2) {
+  color: red;
+}
+
+.payed{
+  opacity: 0.7;
+}
+
+.payed h2:nth-child(1){
+  text-decoration: line-through;
+}
+
+.payed h2:nth-child(2){
+  color: green;
 }

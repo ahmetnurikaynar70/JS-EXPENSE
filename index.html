@@ -16,37 +16,35 @@
         <div class="double">
           <div class="form-harcama">
             <label>Harcama:</label>
-            <input type="text" />
+            <input id="harcama" type="text" placeholder="ürünü giriniz.." />
           </div>
           <div class="form-fiyat">
             <label>Fiyat:</label>
-            <input type="number" />
+            <input id="fiyat" type="number" placeholder="fiyatı giriniz.." />
           </div>
         </div>
         <div class="double">
           <div class="form-durum">
-            <input type="checkbox" />
-            <label for="">Ödendi</label>
+            <input id="status-input" type="checkbox" />
+            <label for="status-input">Ödendi</label>
           </div>
           <button class="ekle-btn">Ekle</button>
         </div>
       </form>
       <!-- toplam ifadesi -->
       <div class="toplam">
-        Toplam Harcama: <span id="toplam-bilgi">5000</span> &#8378
+        Toplam Harcama: <span id="toplam-bilgi">0</span> &#8378
       </div>
 
+      <select id="filter-select">
+        <option value="all">Hepsi</option>
+        <option value="not-payed">Ödenmedi</option>
+        <option value="payed">Ödendi</option>
+      </select>
+
       <!-- liste -->
-      <div class="liste">
-        <div class="harcama">
-            <h2>Telefon</h2>
-            <h2>3500</h2>
-            <div class="buttons">
-                <img src="images/pay.png">
-                <img src="images/remove.png">
-            </div>
-        </div>
-      </div>
+      <div class="liste"></div>
+
     </div>
 
     <!-- JS -->
